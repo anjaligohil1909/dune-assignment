@@ -3,13 +3,19 @@ import React from "react";
 
 function RiskAreas({ areas }) {
   return (
-    <Box>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        height: "24.3rem", // Ensure the Box takes the full height of its parent
+      }}
+    >
       <Typography
         style={{
           marginTop: "10px",
           fontSize: "12px",
           letterSpacing: "2px",
-          mb: 3,
+          marginBottom: "1rem",
         }}
       >
         HIGH RISK AREAS
@@ -20,7 +26,7 @@ function RiskAreas({ areas }) {
             style={{
               display: "flex",
               gap: "1rem",
-              margin: "15px 5px",
+              margin: "10px 5px",
               textAlign: "left",
               alignItems: "flex-end",
             }}
@@ -28,14 +34,16 @@ function RiskAreas({ areas }) {
             <div style={{ textAlign: "center" }}>
               <Typography>{index + 1}</Typography>
               <Box
-                sx={{ height: "0.25rem", width: "1rem", bgcolor: "green" }}
+                sx={{ height: "0.25rem", width: "1rem", bgcolor: "var(--color-green)" }}
               ></Box>
             </div>
-            <Typography>{area}</Typography>
+            <Typography>{area.name}</Typography>
           </div>
         );
       })}
-      <Link href="#"> Learn about risk areas</Link>
+      <Link href="#" sx={{ marginTop: "auto", mb: "15px", textDecoration:"none" }}>
+        Learn about risk areas
+      </Link>
     </Box>
   );
 }
