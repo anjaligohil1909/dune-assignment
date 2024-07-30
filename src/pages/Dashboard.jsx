@@ -211,9 +211,7 @@ function Dashboard() {
                   <text style={{ textTransform: "uppercase" }}>
                     Your Risk Score is
                     <span style={{ color: "var(--color-red)" }}>
-                      {" "}
-                      39 Points{" "}
-                    </span>{" "}
+                    </span>
                     higher than average
                   </text>
                 </Typography>
