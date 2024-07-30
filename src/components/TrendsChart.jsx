@@ -59,11 +59,13 @@ function TrendsChart({ risk_score_over_time }) {
             dataKey="month" 
             dy={10} 
             tickLine={false} 
+            tick={{ fill: "var(--color-white)" }}
           />
           <YAxis
             axisLine={false}  
             tickMargin={10}   
             tickLine={false} 
+            tick={{ fill: "var(--color-white)" }}
           />
           <Tooltip />
           <Line 

@@ -6,7 +6,6 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
   ResponsiveContainer,
 } from "recharts";
 import moment from "moment";
@@ -54,14 +53,19 @@ function RiskLineChart({ props, data }) {
           dataKey="timestamp"
           tickFormatter={(tick) => formatXAxis(tick)}
           tickLine={false}
+          tick={{ fill: "var(--color-white)" }}
         />
-        <YAxis tickLine={false} axisLine={false} />
+        <YAxis
+          tickLine={false}
+          axisLine={false}
+          tick={{ fill: "var(--color-white)" }}
+        />
         <Line
           type="monotone"
           dataKey="risk_score"
           stroke="var(--color-yellow)"
           dot={false}
-          strokeWidth={2} 
+          strokeWidth={2}
         />
         <Tooltip
           content={<CustomTooltip />}

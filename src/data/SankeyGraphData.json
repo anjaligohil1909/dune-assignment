@@ -1,0 +1,127 @@
+{
+  "nodes": [
+    {
+      "name": "",
+      "level": 0,
+      "color": "#dcdada",
+      "val": 0
+    },
+    {
+      "name": "links_clicked",
+      "level": 1,
+      "color": "#949494",
+      "val": 2735,
+      "displayName": "Links Clicked"
+    },
+    {
+      "name": "qr_code_scanned",
+      "level": 1,
+      "color": "#949494",
+      "val": 102,
+      "displayName": "QR Code Scanned"
+    },
+    {
+      "name": "download_attachments",
+      "level": 1,
+      "color": "#949494",
+      "val": 80,
+      "displayName": "Downloaded Attachments"
+    },
+    {
+      "name": "tests_responded_to",
+      "level": 1,
+      "color": "#949494",
+      "val": 180,
+      "displayName": "Tests Responded To"
+    },
+    {
+      "name": "tests_ignored",
+      "level": 1,
+      "color": "#ffffff",
+      "val": 5577,
+      "displayName": "Tests Ignored"
+    },
+    {
+      "name": "reported_to_watchtower",
+      "level": 1,
+      "color": "#00ff82",
+      "val": 2021,
+      "displayName": "Reported To Watch Tower"
+    },
+    {
+      "name": "credentials_entered",
+      "level": 2,
+      "color": "#dcdada",
+      "val": 300,
+      "displayName": "Credentials Entered"
+    },
+    {
+      "name": "credentials_submitted",
+      "level": 3,
+      "color": "#ffb55f",
+      "val": 44,
+      "displayName": "Credentials Submitted"
+    },
+    {
+      "name": "mfa_entered",
+      "level": 4,
+      "color": "#ff6d55",
+      "val": 44,
+      "displayName": "MFA Entered"
+    }
+  ],
+  "links": [
+    {
+      "source": 0,
+      "target": 1,
+      "value": 1
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "value": 1
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "value": 1
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "value": 1
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "value": 1
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "value": 1
+    },
+
+    {
+      "source": 1,
+      "target": 7,
+      "value": 1
+    },
+
+    {
+      "source": 2,
+      "target": 7,
+      "value": 1
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "value": 1
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "value": 1
+    }
+  ]
+}

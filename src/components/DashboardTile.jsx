@@ -1,8 +1,7 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
-import { ResponsiveContainer, Pie, PieChart, Cell, LabelList } from "recharts";
+import { Box } from "@mui/material";
 
-function DashboardTile({ titleElement, element, textAlign = "center" }) {
+function DashboardTile({ titleElement, element }) {
   return (
     <Box>
       {titleElement}
