@@ -95,7 +95,7 @@ function Dashboard() {
 
       {/* Second Row */}
       <Grid container spacing={4} mb={4}>
-        <Grid item xs={12} md={3} lg={12}>
+        <Grid item xs={12} md={12} lg={12}>
           <InfoTooltip
             text="User Interactions"
             tooltipText="This is an explanation of what User Interaction means."
@@ -162,7 +162,7 @@ function Dashboard() {
 
       {/* Fourth Row */}
       <Grid container spacing={4} mb={4}>
-        <Grid item xs={12} md={3} lg={3.5}>
+        <Grid item xs={12} md={12} lg={3.5}>
           <InfoTooltip
             text="Risk Categories"
             tooltipText="This is an explanation of what risk categories means."
@@ -190,7 +190,7 @@ function Dashboard() {
             />
           </Item>
         </Grid>
-        <Grid item xs={12} md={3} lg={8.5}>
+        <Grid item xs={12} md={12} lg={8.5}>
           <InfoTooltip
             text="Risk Score Comparison"
             tooltipText="This is an explanation of what risk Score Comparison means."
