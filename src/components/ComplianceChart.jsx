@@ -10,7 +10,7 @@ import {
   ResponsiveContainer,
   Text,
 } from "recharts";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import data from "../data/Dashboard_Dune Security.json";
 
 function ComplianceChart() {
@@ -41,8 +41,8 @@ function ComplianceChart() {
     <Box>
       <ResponsiveContainer width="100%" height={275}>
         <BarChart data={chartData} barSize={25}>
-          <CartesianGrid vertical={false} stroke="#e0e0e0" />
-          <XAxis dataKey="name" dy={10} tickLine={false} />
+          <CartesianGrid vertical={false} horizontal={false} stroke="#e0e0e0" />
+          <XAxis dataKey="name" dy={10} tickLine={false} tick={{ fill: "var(--color-white)" }}/>
           <YAxis
             tick={false}
             label={{
@@ -50,7 +50,8 @@ function ComplianceChart() {
               angle: -90,
               position: "insideLeft",
               dy: 35,
-              dx:25
+              dx:25,
+              fill: "var(--color-white)"
             }}
           />
           <Tooltip />

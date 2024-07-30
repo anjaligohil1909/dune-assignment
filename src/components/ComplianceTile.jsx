@@ -1,4 +1,3 @@
-import { AccessAlarm } from "@mui/icons-material";
 import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
 import GdprIcon from "@mui/icons-material/Security"; // Replace with your actual icon
